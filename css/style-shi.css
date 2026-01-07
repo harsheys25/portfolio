@@ -1,0 +1,166 @@
+:root {
+  --bg: #040d12;
+  --text: #93B1A6;
+  --muted: #183D3D;
+  --accent: #183D3D;
+  --card: #5C8374; 
+}
+
+*{
+  box-sizing: border-box;
+  font-family: Quicksand;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color:rgba(4, 13, 18,0.75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+}
+
+.navbar a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+
+.caps{
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  background: #93B1A6;
+  color: #183D3D;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.caps:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgb(255, 255, 255, 0.7);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.boxer{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  gap: 1rem;
+  margin-bottom: 20vh;
+}
+
+.avatar {
+  width: 180px;
+  border-radius: 50%;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.primary{
+  background: var(--accent);
+  color: white;
+}
+.btn:hover{
+  background-color: var(--text);
+  color: var(--muted);
+}
+
+.secondary {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.card, .project-card {
+  background:#93B1A6;
+  color:#040D12;
+  padding: 1.5rem;
+  border-radius: 25px;
+  margin-top: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.about{
+  text-align: left;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 20px;
+  border-style: solid;
+  border-radius: 2rem;
+  border-color:#93B1A6 ;
+}
+
+.actions{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.socials{
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.icon-link img {
+  width: 32px;
+  height:32px;
+  filter: brightness(0) invert(0.85);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icon-link:hover img {
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+.brand {
+  text-decoration: none;
+  color: #a7c7bd;        /* same as your text */
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.brand:hover {
+  opacity: 0.85;
+}
