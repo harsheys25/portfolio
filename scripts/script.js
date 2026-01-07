@@ -26,7 +26,7 @@ document.querySelectorAll(".js-magnetic").forEach(btn => {
 });
 
 /* 
-   3. ACTIVE NAV LINK
+   nav
  */
 
 const currentPage = location.pathname.split("/").pop();
@@ -39,7 +39,7 @@ document.querySelectorAll(".navbar a").forEach(link => {
 
 
 /* 
-   4. MICRO POLISH (OPTIONAL)
+   smoothening
  */
 
 // Fade-in sections on load
